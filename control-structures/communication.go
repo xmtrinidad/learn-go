@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/Pallinder/go-randomdata"
 )
 
 func displayIntro() {
-	fmt.Println("Welcome to Go Bank!")
+	fmt.Printf("Welcome %s to Go Bank!", randomdata.SillyName())
 	fmt.Println("What do you want to do?")
 
 	fmt.Println("1. Check balance")
